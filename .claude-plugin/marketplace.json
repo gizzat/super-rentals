@@ -1,0 +1,14 @@
+{
+  "name": "gizzat",
+  "owner": {
+    "name": "gizzat",
+    "url": "https://github.com/gizzat"
+  },
+  "plugins": [
+    {
+      "name": "claude-voice-response",
+      "source": ".",
+      "description": "Speaks Claude Code's final response aloud in a user-selectable voice (Arnold, Yoda, Morgan Freeman, or your own clone). Pluggable TTS backends, optional Russian audio, runtime voice/verbosity switching via /voice."
+    }
+  ]
+}
