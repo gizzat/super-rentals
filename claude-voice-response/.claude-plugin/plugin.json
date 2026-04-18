@@ -1,0 +1,10 @@
+{
+  "name": "claude-voice-response",
+  "version": "0.1.0",
+  "description": "Speaks Claude Code's final response aloud in a user-selectable voice. Pluggable TTS backends (ElevenLabs, OpenAI, macOS say), optional Russian audio translation, and verbosity modes from a single 'Done.' ping to full readback.",
+  "author": {
+    "name": "super-rentals contributors"
+  },
+  "homepage": "https://github.com/gizzat/super-rentals/tree/claude/voice-response-feature-plan-j9A4l/claude-voice-response",
+  "keywords": ["tts", "voice", "audio", "hook", "plugin"]
+}

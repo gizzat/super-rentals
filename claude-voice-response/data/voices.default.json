@@ -1,0 +1,67 @@
+{
+  "alex": {
+    "backend": "say",
+    "voice_id": "Alex",
+    "description": "macOS built-in; offline"
+  },
+  "samantha": {
+    "backend": "say",
+    "voice_id": "Samantha",
+    "description": "macOS built-in; offline"
+  },
+  "daniel": {
+    "backend": "say",
+    "voice_id": "Daniel",
+    "description": "macOS built-in; offline; UK English"
+  },
+  "milena": {
+    "backend": "say",
+    "voice_id": "Milena",
+    "description": "macOS built-in; offline; Russian"
+  },
+  "yuri": {
+    "backend": "say",
+    "voice_id": "Yuri",
+    "description": "macOS built-in; offline; Russian"
+  },
+  "onyx": {
+    "backend": "openai",
+    "voice_id": "onyx",
+    "description": "OpenAI TTS; deep male; needs OPENAI_API_KEY"
+  },
+  "nova": {
+    "backend": "openai",
+    "voice_id": "nova",
+    "description": "OpenAI TTS; warm female; needs OPENAI_API_KEY"
+  },
+  "shimmer": {
+    "backend": "openai",
+    "voice_id": "shimmer",
+    "description": "OpenAI TTS; bright female; needs OPENAI_API_KEY"
+  },
+  "arnold": {
+    "backend": "elevenlabs",
+    "voice_id": "VR6AewLTigWG4xSOukaG",
+    "description": "ElevenLabs preset 'Arnold'; paste your own cloned voice id for a better Terminator impression"
+  },
+  "adam": {
+    "backend": "elevenlabs",
+    "voice_id": "pNInz6obpgDQGcFmaJgB",
+    "description": "ElevenLabs preset 'Adam'; deep narrator"
+  },
+  "rachel": {
+    "backend": "elevenlabs",
+    "voice_id": "21m00Tcm4TlvDq8ikWAM",
+    "description": "ElevenLabs preset 'Rachel'; calm female narrator"
+  },
+  "yoda": {
+    "backend": "elevenlabs",
+    "voice_id": "REPLACE_WITH_YODA_VOICE_ID",
+    "description": "Placeholder — paste an ElevenLabs Yoda clone id into ~/.claude/plugins/data/claude-voice-response/voices.json"
+  },
+  "morgan": {
+    "backend": "elevenlabs",
+    "voice_id": "REPLACE_WITH_MORGAN_FREEMAN_VOICE_ID",
+    "description": "Placeholder — paste an ElevenLabs Morgan Freeman clone id into ~/.claude/plugins/data/claude-voice-response/voices.json"
+  }
+}
