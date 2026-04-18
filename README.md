@@ -34,19 +34,39 @@ Nothing about Claude's normal behaviour changes — on-screen text is untouched,
 
 **Requirements:** macOS, `jq`, `python3`, `curl` (all ship with macOS).
 
-```bash
-# From Claude Code:
-/plugin install gizzat/super-rentals
+### From GitHub (recommended)
+
+In Claude Code, add this repo as a plugin marketplace, then install the plugin from it:
+
+```text
+/plugin marketplace add gizzat/super-rentals
+/plugin install claude-voice-response@gizzat
 ```
 
-Or locally, from a clone:
+### From a local clone
 
 ```bash
-git clone https://github.com/gizzat/super-rentals.git claude-voice-response
-claude plugin install ./claude-voice-response --scope user
+git clone https://github.com/gizzat/super-rentals.git
 ```
 
-That's it. The Stop hook and the `/voice` command are registered automatically.
+Then in Claude Code:
+
+```text
+/plugin marketplace add ./super-rentals
+/plugin install claude-voice-response@gizzat
+```
+
+### For plugin development (hot-reload)
+
+Skip the marketplace and load the plugin directly from a local directory — useful when you're editing `hooks/speak.sh` or the adapters and want changes picked up immediately:
+
+```bash
+claude --plugin-dir ./super-rentals
+```
+
+Run `/reload-plugins` inside the session after making changes.
+
+Once installed, the Stop hook and the `/voice` command are registered automatically.
 
 ### Optional API keys
 
@@ -192,7 +212,9 @@ Check `~/.claude/plugins/data/claude-voice-response/last.log` for the most recen
 
 ```
 .
-├── .claude-plugin/plugin.json   Plugin manifest
+├── .claude-plugin/
+│   ├── plugin.json              Plugin manifest
+│   └── marketplace.json         Marketplace entry so this repo is installable
 ├── hooks/
 │   ├── hooks.json               Registers the Stop hook
 │   └── speak.sh                 Hook entrypoint
