@@ -1,0 +1,11 @@
+{
+  "name": "claude-voice-response",
+  "version": "0.1.0",
+  "description": "Speaks Claude Code's final response aloud in a user-selectable voice. Pluggable TTS backends (ElevenLabs, OpenAI, macOS say), optional Russian audio translation, and verbosity modes from a single 'Done.' ping to full readback.",
+  "author": {
+    "name": "tazabekov"
+  },
+  "homepage": "https://github.com/tazabekov/claude-voice",
+  "repository": "https://github.com/tazabekov/claude-voice",
+  "keywords": ["tts", "voice", "audio", "hook", "plugin", "claude-code"]
+}
